@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{B0C821C3-9DC5-C7E4-CC9F-34F7C95EA633}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_6_9;UNITY_4_6;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_IL2CPP;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;UNITY5_SCRIPTING_IN_UNITY4;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_MONO;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Standard Assets\SBS\Core\AS3Stack.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Core\AS3Utils.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Core\Assert.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Core\AutoPrefab.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Core\AutoPrefabSettings.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Core\CoreUtils.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Core\FSM.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Core\FpsCounter.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Core\GameObjectExtensions.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Core\Image.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Core\Interval.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Core\IntrusiveList.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Core\IntrusiveListNode.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Core\LightProbeUtils.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Core\Manager.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Core\ObjCDispatcher.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Core\SBSTuple.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Core\Signal.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Core\SignalTarget.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Core\StringUtils.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Core\TimeSource.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Core\Tuple.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Core\iOSUtils.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Core\iTweenAnimator.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Flurry\FlurryBinding.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Image Effects\DepthOfField.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Image Effects\MotionBlur.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Image Effects\SBSImageEffects.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Level\Checkline.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Level\Checkpoint.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Level\FiniteStateMachine.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Level\Layers.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Level\LevelCell.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Level\LevelObject.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Level\LevelPreprocessor.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Level\LevelRoot.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Level\MovableLevelObject.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Managers\ChecklinesManager.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Managers\CheckpointsManager.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Managers\ExternalTexturesManager.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Managers\ManagersRoot.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Managers\RacingManager.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Managers\SoundsManager.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Managers\TexShiftManager.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Managers\TimeManager.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Managers\TokensManager.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Managers\UIManager.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Managers\UIManager_OLD.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Managers\VehiclesManager.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Math\Curve.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Math\PTFPoint.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Math\ParallelTransportFrame.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Math\SBSAngleAxis.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Math\SBSBounds.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Math\SBSClip.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Math\SBSEasing.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Math\SBSLerp.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Math\SBSMath.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Math\SBSMatrix4x4.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Math\SBSMix.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Math\SBSPID.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Math\SBSPlane.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Math\SBSQuaternion.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Math\SBSVector3.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Miniclip\AlertViewBindings.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Miniclip\CoinsService.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Miniclip\FBBindings.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Miniclip\InAppPurchaseBindings.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Miniclip\LNBindings.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Miniclip\MCUtilsBindings.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Miniclip\TWBindings.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Miniclip\UtilsBindings.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Miniclip\WebViewBindings.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Neverending\NeverendingBlock.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Neverending\NeverendingBlockLink.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Neverending\NeverendingObject.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Neverending\NeverendingPlayer.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Neverending\NeverendingTrack.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Neverending\NeverendingTutorial.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Pool\IPoolCollectionObject.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Pool\IPoolObject.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Pool\Pool.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Pool\PoolCollection.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\RIGA\AdTagManager.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\RIGA\AdvRootBehaviour.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Racing\Blocks\RacingBlock.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Racing\Blocks\RacingBlockContainer.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Racing\BranchNode.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Racing\Cameras\CameraSky.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Racing\Cameras\FollowVehicleClassic.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Racing\IOcean.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Racing\IVehiclePhysics.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Racing\KeyboardInputs.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Racing\OceanBase.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Racing\Token.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Racing\TokenBakedLighting.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Racing\TokenBakedLightingSamples.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Racing\Track.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Racing\TrackBranch.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Racing\TrackMap.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Racing\TrackMapMarker.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Racing\Vehicle\Brake.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Racing\Vehicle\ChassisGraphics.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Racing\Vehicle\ContactData.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Racing\Vehicle\Differential.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Racing\Vehicle\Engine.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Racing\Vehicle\Friction.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Racing\Vehicle\Gearbox.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Racing\Vehicle\RotationalAxle.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Racing\Vehicle\Suspension.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Racing\Vehicle\Tyre.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Racing\Vehicle\VehiclePhysics.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Racing\Vehicle\VehicleRaceAI.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Racing\Vehicle\VehicleSounds.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Racing\Vehicle\VehicleUtils.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Racing\Vehicle\Wheel.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Racing\Vehicle\WheelGraphics.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Racing\Vehicle\Wing.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Racing\VehicleAIBase.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Racing\VehicleAISensor.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Racing\VehicleInputs.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Racing\VehicleRaceData.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Racing\VehicleRespawner.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Racing\VehicleRestore.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Racing\VehicleSimple\Buoyancy.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Racing\VehicleSimple\VehiclePhysicsSimple.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Racing\VehicleSimple\VehicleShadow.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Racing\VehicleSimple\VehicleSimpleTest.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Racing\VehicleSimple\WheelRay.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\Racing\VehicleTrackData.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\SFX\RandomSound.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\UI\UIButton.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\UI\UIButtonTextColor.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\UI\UIFlyer.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\UI\UILayoutAndScaling.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\UI\UINineSlice.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\UI\UIPage.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\UI\UIPopup.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\UI\UIScrollBar.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\UI\UIScroller.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\UI\UITextField.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\UI_OLD\AnimatedOverlay.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\UI_OLD\BitmapFont.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\UI_OLD\BitmapFontText.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\UI_OLD\Button.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\UI_OLD\Composition.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\UI_OLD\DPRect.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\UI_OLD\Overlay.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\UI_OLD\OverlaysBatch.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\UI_OLD\OverlaysLayer.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\UI_OLD\Popup.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\UI_OLD\PopusHolder.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\UI_OLD\Scroller.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\UI_OLD\UIAnimation.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\UI_OLD\UIAtlas.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\UI_OLD\UICollection.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\UI_OLD\UICollectionNode.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\UI_OLD\UIController.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\UI_OLD\UIElement.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\UI_OLD\UIHelper.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\UI_OLD\UIRect.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\UI_OLD\UIVector2.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\VFX\MeshMorpher.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\VFX\Polyline.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\XML\XMLNode.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\XML\XMLReader.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\XML\XMLUtils.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\iTween\iTween.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\uniSWF\ScrollersBehaviour.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\uniSWF\ScrollersDirector.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\uniSWF\ScrollingContainer.cs" />
+     <Compile Include="Assets\Standard Assets\SBS\uniSWF\ScrollingController.cs" />
+     <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth Cutout.shader" />
+     <None Include="Assets\Car Paint Shader PRO Mobile\Shaders\CarPaint Low Detail RefMask.shader" />
+     <None Include="Assets\Standard Assets\Shaders\Illumin-Reflect-BumpSpec.shader" />
+     <None Include="Assets\NGUI\ReadMe - 3.6.8.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 2.shader" />
+     <None Include="Assets\Standard Assets\Projectors\Shaders\Projector Multiply.shader" />
+     <None Include="Assets\NGUI\Examples\Models\Orc\Orc Skin.shader" />
+     <None Include="Assets\Car Paint Shader PRO Mobile\Shaders\CarPaint Duo.shader" />
+     <None Include="Assets\Standard Assets\Shaders\GaussianBlur.shader" />
+     <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo20.txt" />
+     <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo14.txt" />
+     <None Include="Assets\Standard Assets\Shaders\Mobile\Car Paint\Mobile-CarPaint-FillDepth.shader" />
+     <None Include="Assets\Car Paint Shader PRO Mobile\Shaders\CarGlass Unlit.shader" />
+     <None Include="Assets\Standard Assets\Shaders\Curve\Curve-Particle-MultiplyAlpha.shader" />
+     <None Include="Assets\FX\Particle resources\Shaders (Mobile)\CFXM_MobileParticleAdd_Alpha8.shader" />
+     <None Include="Assets\Car Paint Shader PRO Mobile\Shaders\CarPaint Ultra Detail LM.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 1.shader" />
+     <None Include="Assets\Car Paint Shader PRO Mobile\Shaders\CarPaint Ultra Detail Bump RefMask ColorMask SpecMask.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 2.shader" />
+     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Particle AddSoft A8.shader" />
+     <None Include="Assets\Car Paint Shader PRO Mobile\Shaders\CarPaint Low Detail RefMask ColorMask.shader" />
+     <None Include="Assets\NGUI\Examples\Shaders\Unlit - Masked Colored.shader" />
+     <None Include="Assets\Car Paint Shader PRO Mobile\Shaders\CarPaint High Detail RefMask.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 3.shader" />
+     <None Include="Assets\Car Paint Shader PRO Mobile\Shaders\CarPaint Ultra Detail Bump RefMask SpecMask.shader" />
+     <None Include="Assets\Car Paint Shader PRO Mobile\Shaders\CarPaint Low Detail.shader" />
+     <None Include="Assets\Standard Assets\Shaders\Reflect-BumpSpec-RotCubemap.shader" />
+     <None Include="Assets\Standard Assets\Shaders\Curve\Curve-Particle-AddAlpha.shader" />
+     <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo18.txt" />
+     <None Include="Assets\Standard Assets\Shaders\MotionBlur.shader" />
+     <None Include="Assets\Standard Assets\Shaders\Sprites-MaskDefault.shader" />
+     <None Include="Assets\Standard Assets\Shaders\Curve\Curve-Particle-BlendAlpha.shader" />
+     <None Include="Assets\Car Paint Shader PRO Mobile\Shaders\CarPaint Ultra Detail Bump.shader" />
+     <None Include="Assets\Standard Assets\Shaders\Curve\Curve-ColorDiffuse.shader" />
+     <None Include="Assets\Car Paint Shader PRO Mobile\Shaders\CarGlass Probes.shader" />
+     <None Include="Assets\Standard Assets\Shaders\Curve\Curve-Unlit.shader" />
+     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Smoke Scroll.shader" />
+     <None Include="Assets\Standard Assets\Shaders\Curve\Curve-Particle-Blend.shader" />
+     <None Include="Assets\Standard Assets\Shaders\Mobile\Mobile-Reflect-BumpSpec-1DirectionalLight-SepGloss.shader" />
+     <None Include="Assets\Car Paint Shader PRO Mobile\!readme.txt" />
+     <None Include="Assets\Car Paint Shader PRO Mobile\Shaders\CarPaint Duo Probes.shader" />
+     <None Include="Assets\Car Paint Shader PRO Mobile\Shaders\CarGlass.shader" />
+     <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Header.txt" />
+     <None Include="Assets\Car Paint Shader PRO Mobile\Shaders\CarPaint Medium Detail Decal.shader" />
+     <None Include="Assets\Standard Assets\Shaders\Curve\Curve-Toon-RimSpecular.shader" />
+     <None Include="Assets\Car Paint Shader PRO Mobile\Shaders\CarPaint Medium Detail RefMask.shader" />
+     <None Include="Assets\Standard Assets\Shaders\Mobile\Car Paint\Mobile-CarPaint-SpecularAlpha-1DirectionalLight.shader" />
+     <None Include="Assets\Car Paint Shader PRO Mobile\Shaders\CarPaint High Detail Probes.shader" />
+     <None Include="Assets\Car Paint Shader PRO Mobile\Shaders\CarPaint Medium Detail Scrolled Env.shader" />
+     <None Include="Assets\Standard Assets\Shaders\Curve\Curve-Toon-Rim.shader" />
+     <None Include="Assets\Car Paint Shader PRO Mobile\Shaders\CarPaint Ultra Detail.shader" />
+     <None Include="Assets\Standard Assets\Shaders\Curve\Curve-Diffuse.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 1.shader" />
+     <None Include="Assets\Car Paint Shader PRO Mobile\Shaders\CarGlassDS.shader" />
+     <None Include="Assets\Car Paint Shader PRO Mobile\Shaders\CarChrome Probes.shader" />
+     <None Include="Assets\Standard Assets\Shaders\Mobile\Mobile-Reflect-BumpSpec-1DirectionalLight.shader" />
+     <None Include="Assets\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />
+     <None Include="Assets\Standard Assets\Shaders\Curve\Curve-Particle-AddDouble.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 3.shader" />
+     <None Include="Assets\Car Paint Shader PRO Mobile\Shaders\CarGlass Advanced.shader" />
+     <None Include="Assets\Car Paint Shader PRO Mobile\Shaders\CarPaint Low Detail RefMask ColorMask SpecMask.shader" />
+     <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Normal.txt" />
+     <None Include="Assets\Standard Assets\Shaders\Curve\Curve-Particle-MultiplyGamma.shader" />
+     <None Include="Assets\Standard Assets\Shaders\Unlit-AlphaTest-NoFog.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 2.shader" />
+     <None Include="Assets\Car Paint Shader PRO Mobile\Shaders\CarPaint Medium Detail.shader" />
+     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Particle Add A8.shader" />
+     <None Include="Assets\Standard Assets\Shaders\Mobile\Mobile-Glass.shader" />
+     <None Include="Assets\Car Paint Shader PRO Mobile\Shaders\CarPaint Low Detail Alpha.shader" />
+     <None Include="Assets\Car Paint Shader PRO Mobile\Shaders\CarPaint Low Detail FakeHDR.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 3.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 2.shader" />
+     <None Include="Assets\Car Paint Shader PRO Mobile\Shaders\CarPaint Medium Detail RefMask ColorMask SpecMask.shader" />
+     <None Include="Assets\Standard Assets\Shaders\Unlit-NoFog.shader" />
+     <None Include="Assets\Standard Assets\Projectors\Shaders\Projector Light.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 1.shader" />
+     <None Include="Assets\Standard Assets\Shaders\Mobile\Car Paint\Mobile-CarPaint-Specular-1DirectionalLight.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 1.shader" />
+     <None Include="Assets\Car Paint Shader PRO Mobile\Shaders\CarGlass Diffuse.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored.shader" />
+     <None Include="Assets\Standard Assets\Shaders\Sprites-MaskedDefault.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored.shader" />
+     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Multiply Soft Scroll.shader" />
+     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Particle Multiply A8.shader" />
+     <None Include="Assets\Car Paint Shader PRO Mobile\Shaders\CarPaint Medium Detail RefMask ColorMask.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text.shader" />
+     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Multiply Soft.shader" />
+     <None Include="Assets\Standard Assets\Shaders\Unlit-Alpha-NoFog.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 3.shader" />
+     <None Include="Assets\Standard Assets\Shaders\Unlit-Alpha-NoFog-Matrix.shader" />
+     <None Include="Assets\Standard Assets\Shaders\DepthOfField.shader" />
+     <None Include="Assets\Standard Assets\Shaders\Curve\Curve-Particle-Multiply.shader" />
+     <None Include="Assets\Car Paint Shader PRO Mobile\Shaders\CarPaint High Detail Decal.shader" />
+     <None Include="Assets\Car Paint Shader PRO Mobile\Shaders\CarPaint High Detail RefMask ColorMask.shader" />
+     <None Include="Assets\Car Paint Shader PRO Mobile\Shaders\CarPaint Medium Detail Alpha.shader" />
+     <None Include="Assets\Standard Assets\Projectors\Shaders\Projector Add.shader" />
+     <None Include="Assets\Standard Assets\Shaders\Mobile\Mobile-Illumin-Diffuse.shader" />
+     <None Include="Assets\Car Paint Shader PRO Mobile\Shaders\CarChrome.shader" />
+     <None Include="Assets\Car Paint Shader PRO Mobile\Shaders\CarPaint High Detail.shader" />
+     <None Include="Assets\NGUI\Examples\Shaders\Unlit - Additive Colored.shader" />
+     <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Header.txt" />
+     <None Include="Assets\NGUI\Examples\Shaders\Refractive.shader" />
+     <None Include="Assets\Car Paint Shader PRO Mobile\Shaders\CarPaint Unlit.shader" />
+     <None Include="Assets\Standard Assets\Shaders\Mobile\Mobile-Reflect-Specular-1DirectionalLight-SepGloss.shader" />
+     <None Include="Assets\Car Paint Shader PRO Mobile\Shaders\CarGlass AdvancedDS.shader" />
+     <None Include="Assets\Car Paint Shader PRO Mobile\Shaders\CarPaint High Detail RefMask ColorMask SpecMask.shader" />
+     <None Include="Assets\Car Paint Shader PRO Mobile\Shaders\CarPaint Medium Detail Probes.shader" />
+     <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth.shader" />
+     <None Include="Assets\Standard Assets\Shaders\Font-Masked.shader" />
+     <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Normal.txt" />
+     <None Include="Assets\Standard Assets\Shaders\Curve\Curve_Include.cginc" />
+     <None Include="Assets\Stockcar\ReadMe.txt" />
+     <None Include="Assets\Standard Assets\Shaders\Curve\Curve-Particle-Add.shader" />
+     <None Include="Assets\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
+     <None Include="Assets\Standard Assets\Shaders\MotionBlurObject.shader" />
+     <None Include="Assets\Car Paint Shader PRO Mobile\Shaders\CarPaint High Detail Alpha.shader" />
+     <None Include="Assets\NGUI\Examples\Resources\Localization.txt" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.9/Standalone/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="CodeTitans.JSon">
+ <HintPath>C:/Users/Administrator/Documents/测试/Assets/Standard Assets/SBS/JSON/CodeTitans.JSon.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
