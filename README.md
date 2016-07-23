@@ -3,4 +3,4 @@
 
 截图：   
 
-![image](http://github.com/todaylg/Unity-SimpleCarSimulation/Assets/Images/截图.PNG)
+![image](http://github.com/todaylg/Unity-SimpleCarSimulation/Assets/Images/introduce.png)
